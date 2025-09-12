@@ -1,0 +1,110 @@
+/*
+=============================
+DART VARIABLES & DATA TYPES
+ASSIGNMENTS WITH SOLUTIONS
+=============================
+*/
+
+// =============================
+//* Assignment 1
+// =============================
+// Question:
+// Create variables: userName (String), age (int), height (double), isStudent (bool)
+// Print them using string interpolation
+
+// Solution:
+String userName = "Nilesh";
+int age = 25;
+double height = 5.9;
+bool isStudent = true;
+
+print("Name: $userName, Age: $age, Height: $height, Student: $isStudent");
+
+// Explanation:
+// We declare variables with proper types.
+// String for text, int for numbers, double for decimal, bool for true/false.
+// String interpolation ($variable) is used to print values in a single line.
+
+// =============================
+//* Assignment 2
+// =============================
+// Question:
+// Create a final variable for birth year and a const variable for speed of light
+// Print both values
+
+// Solution:
+final birthYear = 1998;         // Runtime constant
+const speedOfLight = 299792458; // Compile-time constant
+
+print("Birth Year: $birthYear");
+print("Speed of Light: $speedOfLight");
+
+// Explanation:
+// final -> value can be set once at runtime
+// const -> value fixed at compile-time
+// final allows dynamic initialization (e.g., DateTime.now()), const requires compile-time value
+
+// =============================
+//* Assignment 3
+// =============================
+// Question:
+// Create a dynamic variable and assign 3 different types (int, String, double)
+
+// Solution:
+dynamic data = 10;    // int
+print(data);
+
+data = "Hello";        // String
+print(data);
+
+data = 3.14;           // double
+print(data);
+
+// Explanation:
+// dynamic type can store any type and be changed at runtime.
+// Useful when the type is unknown or may change during execution.
+
+// =============================
+//* Assignment 4
+// =============================
+// Question:
+// Use type inference with 'var' and explicit type
+// Print their runtime type
+
+// Solution:
+var inferredVar = 100;       // Dart infers int
+double explicitVar = 12.5;   // Explicit type
+
+print("inferredVar type: ${inferredVar.runtimeType}");
+print("explicitVar type: ${explicitVar.runtimeType}");
+
+// Explanation:
+// var -> Dart automatically infers type from the assigned value
+// Explicit type -> clearly defines the type
+// runtimeType property allows checking variable type at runtime
+
+// =============================
+//* Assignment 5
+// =============================
+// Question:
+// Declare variables using var, dynamic, final, const
+// Explain difference in comments
+
+// Solution:
+var name = "Nilesh";         // Type inferred, cannot change type
+dynamic flexible = 10;       // Can store any type, changeable
+final runtimeConst = 200;    // Value can be set once, known at runtime
+const compileTimeConst = 3.14; // Value fixed at compile-time
+
+// Differences:
+// var       -> Inferred type, cannot change type later
+// dynamic   -> Flexible, can hold any type, changeable at runtime
+// final     -> Value assigned once, known at runtime
+// const     -> Compile-time constant, cannot change
+
+// Explanation:
+// This assignment highlights the differences between variable types.
+// var -> simple and inferred
+// dynamic -> flexible but less safe
+// final -> runtime constant
+// const -> compile-time constant, ideal for fixed values like PI or constants

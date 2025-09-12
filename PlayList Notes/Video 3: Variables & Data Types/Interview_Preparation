@@ -1,0 +1,149 @@
+/*
+=============================
+DART VARIABLES & DATA TYPES
+INTERVIEW PREPARATION
+=============================
+*/
+
+// =============================
+//* Q1: What is a variable in Dart?
+// =============================
+// A variable is a container to store data.
+// You give it a name to access and use the value later.
+
+// Example:
+String userName = "Nilesh";
+int age = 25;
+print("User: $userName, Age: $age");
+
+// Explanation:
+// Variables allow programs to store and manipulate data dynamically.
+// Without variables, a program cannot remember or process user data.
+
+// =============================
+//* Q2: Difference between var, dynamic, final, and const
+// =============================
+/*
+var: Type is inferred from the first assigned value. Cannot change type later.
+dynamic: Can store any type of value and can change type at runtime.
+final: Value can be set only once. Known at runtime.
+const: Value fixed at compile-time. Cannot be changed.
+*/
+
+// Example:
+var city = "Pune";        // Type inferred as String
+dynamic data = 10;         // Can change later
+final birthYear = 1998;    // Assigned once
+const pi = 3.14159;        // Fixed at compile-time
+
+// Explanation:
+// Use var for simple type-inferred variables.
+// Use dynamic only when you need flexibility (but be careful of type errors).
+// Use final for runtime constants, const for compile-time constants like PI.
+
+// =============================
+//* Q3: Difference between compile time and runtime
+// =============================
+/*
+Compile-time: When the program is being converted to machine code. 
+Errors detected here are called compile-time errors.
+
+Runtime: When the program is actually executing. 
+Errors here (runtime errors) occur during execution.
+*/
+
+// Example:
+const compileTimeConst = 3.14;  // Must be known at compile-time
+final runtimeConst = DateTime.now();  // Assigned at runtime
+
+// =============================
+//* Q4: Name the core data types in Dart
+// =============================
+// int     -> Whole numbers
+// double  -> Decimal numbers
+// num     -> Can be int or double
+// String  -> Text
+// bool    -> true/false
+
+// Example:
+int score = 90;
+double height = 5.9;
+num quantity = 12;
+String name = "Nilesh";
+bool isLoggedIn = true;
+
+// =============================
+//* Q5: Can we change the value of a final variable? What about const?
+// =============================
+/*
+final: Cannot change after assignment at runtime
+const: Cannot change, value fixed at compile-time
+*/
+
+// Example:
+final birthYear = 1998;
+// birthYear = 2000; ❌ Not allowed
+
+const pi = 3.14159;
+// pi = 3.14; ❌ Not allowed
+
+// =============================
+// Q6: Explain type inference in Dart
+// =============================
+/*
+Type inference allows Dart to automatically detect the type of a variable
+when using 'var'.
+*/
+
+// Example:
+var total = 100;  // Dart infers type as int
+var name = "Nilesh";  // Dart infers type as String
+
+print(total.runtimeType); // int
+print(name.runtimeType);  // String
+
+// =============================
+//* Q7: Why use dynamic variables?
+// =============================
+/*
+Dynamic variables allow storing multiple types of values in a single variable.
+Use carefully, as type safety is lost.
+*/
+
+// Example:
+dynamic value = 10;     // int
+value = "Hello";        // String
+value = 3.14;           // double
+
+// =============================
+//* Q8: Example of using var, final, const in one program
+// =============================
+var a = 10;                // Type inferred
+final b = DateTime.now();  // Runtime constant
+const c = 3.14;            // Compile-time constant
+
+print("var: $a, final: $b, const: $c");
+
+// Explanation:
+// var -> simple variables with inferred type
+// final -> set once at runtime (e.g., current date)
+// const -> set at compile-time, cannot change
+
+// =============================
+//* Q9: Explain difference between primitive and collection types
+// =============================
+/*
+Primitive types: Store a single value
+- int, double, num, String, bool
+
+Collection types: Store multiple values
+- List: Ordered, allows duplicates
+- Set: Unordered, unique values
+- Map: Key-value pairs
+*/
+
+// Example:
+int age = 25;                // Primitive
+List<String> colors = ["Red","Blue","Green"]; // Collection
+Set<int> numbers = {1,2,3};  // Collection
+Map<String,int> scores = {"Nilesh":90}; // Collection
