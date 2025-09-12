@@ -1,0 +1,76 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025 Webiyor. All rights reserved.
+
+This material is for learning purposes only.
+Do not copy, redistribute, or sell without permission.
+=============================
+*/
+
+**DART VARIABLES & DATA TYPES**
+
+// =============================
+//* 1️⃣ What is a Variable?
+// =============================
+// A variable is a container to store data.
+// You give it a name to access it later.
+// Example:
+var city = "Pune";
+
+// Key points:
+// - Variables store information.
+// - They can be changed (except final/const).
+// - Without variables, programs can't remember data.
+
+// =============================
+//* 2️⃣ Types of Variables
+// =============================
+// var      -> Type inferred, cannot change type later
+var age = 25; // ❌ age = "twenty"; not allowed
+
+// dynamic  -> Can store any type, can change at runtime
+dynamic data = 10;
+data = "Ten"; // ✅ Allowed
+
+// final    -> Value set once at runtime
+final today = DateTime.now();
+
+// const    -> Value fixed at compile time
+const pi = 3.14159;
+
+// =============================
+//* 3️⃣ Core Data Types
+// =============================
+// Numbers
+int score = 90;        // Whole numbers
+double height = 5.9;   // Decimal numbers
+num quantity = 12;     // int or double
+quantity = 12.5;       // ✅ Allowed
+
+// Text
+String name = "Nilesh";
+
+// Boolean
+bool isLoggedIn = true;
+
+// =============================
+//* 4️⃣ Type Inference
+// =============================
+// Dart can automatically detect the type
+var total = 100;        // inferred as int
+double discount = 10.5; // explicit type
+
+// =============================
+//* 5️⃣ Collections
+// =============================
+// Store multiple values
+// List -> Ordered, duplicates allowed
+// Set  -> Unordered, unique values
+// Map  -> Key-value pairs
+List<int> numbers = [1,2,3,3];
+Set<String> colors = {"Red","Blue"};
+Map<String, int> studentScores = {"Nilesh": 90};
+
+
+

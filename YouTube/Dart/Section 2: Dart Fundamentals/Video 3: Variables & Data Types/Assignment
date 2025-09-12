@@ -1,0 +1,25 @@
+/*
+=============================
+DART VARIABLES & DATA TYPES
+ASSIGNMENTS
+=============================
+*/
+
+// Assignment 1:
+// Create variables: userName (String), age (int), height (double), isStudent (bool)
+// Print them using string interpolation
+
+// Assignment 2:
+// Create a final variable for birth year and a const variable for speed of light
+// Print both values
+
+// Assignment 3:
+// Create a dynamic variable and assign 3 different types (int, String, double)
+
+// Assignment 4:
+// Use type inference with 'var' and explicit type
+// Print their runtime type
+
+// Assignment 5:
+// Declare variables using var, dynamic, final, const
+// Explain difference in comments
