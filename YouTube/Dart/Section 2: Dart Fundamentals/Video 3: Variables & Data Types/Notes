@@ -49,7 +49,7 @@ num quantity = 12;     // int or double
 quantity = 12.5;       // ✅ Allowed
 
 // Text
-String name = "Nilesh";
+String name = "Webiyor";
 
 // Boolean
 bool isLoggedIn = true;
@@ -70,7 +70,7 @@ double discount = 10.5; // explicit type
 // Map  -> Key-value pairs
 List<int> numbers = [1,2,3,3];
 Set<String> colors = {"Red","Blue"};
-Map<String, int> studentScores = {"Nilesh": 90};
+Map<String, int> studentScores = {"Webiyor": 90};
 
 
 
