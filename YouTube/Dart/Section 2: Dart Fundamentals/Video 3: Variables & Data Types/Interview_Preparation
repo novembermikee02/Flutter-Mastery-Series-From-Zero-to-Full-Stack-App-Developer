@@ -12,7 +12,7 @@ INTERVIEW PREPARATION
 // You give it a name to access and use the value later.
 
 // Example:
-String userName = "Nilesh";
+String userName = "Webiyor";
 int age = 25;
 print("User: $userName, Age: $age");
 
@@ -69,7 +69,7 @@ final runtimeConst = DateTime.now();  // Assigned at runtime
 int score = 90;
 double height = 5.9;
 num quantity = 12;
-String name = "Nilesh";
+String name = "Webiyor";
 bool isLoggedIn = true;
 
 // =============================
@@ -97,7 +97,7 @@ when using 'var'.
 
 // Example:
 var total = 100;  // Dart infers type as int
-var name = "Nilesh";  // Dart infers type as String
+var name = "Webiyor";  // Dart infers type as String
 
 print(total.runtimeType); // int
 print(name.runtimeType);  // String
@@ -146,4 +146,4 @@ Collection types: Store multiple values
 int age = 25;                // Primitive
 List<String> colors = ["Red","Blue","Green"]; // Collection
 Set<int> numbers = {1,2,3};  // Collection
-Map<String,int> scores = {"Nilesh":90}; // Collection
+Map<String,int> scores = {"Webiyor":90}; // Collection

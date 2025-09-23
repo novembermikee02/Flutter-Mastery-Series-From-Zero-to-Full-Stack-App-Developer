@@ -13,7 +13,7 @@ ASSIGNMENTS WITH SOLUTIONS
 // Print them using string interpolation
 
 // Solution:
-String userName = "Nilesh";
+String userName = "Webiyor";
 int age = 25;
 double height = 5.9;
 bool isStudent = true;
@@ -91,7 +91,7 @@ print("explicitVar type: ${explicitVar.runtimeType}");
 // Explain difference in comments
 
 // Solution:
-var name = "Nilesh";         // Type inferred, cannot change type
+var name = "Webiyor";         // Type inferred, cannot change type
 dynamic flexible = 10;       // Can store any type, changeable
 final runtimeConst = 200;    // Value can be set once, known at runtime
 const compileTimeConst = 3.14; // Value fixed at compile-time
