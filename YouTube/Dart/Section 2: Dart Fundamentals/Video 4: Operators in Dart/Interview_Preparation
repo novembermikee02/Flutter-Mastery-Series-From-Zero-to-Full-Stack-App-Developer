@@ -1,0 +1,70 @@
+/*
+=============================
+DART OPERATORS
+INTERVIEW PREPARATION
+=============================
+*/
+
+// =============================
+//* Q1: What are operators in Dart?
+// =============================
+// Operators are symbols that perform operations on variables and values.
+// Example: +, -, *, /
+
+// =============================
+//* Q2: Difference between == and =
+// =============================
+/*
+=   -> Assignment (assigns value to a variable)
+==  -> Equality (compares two values)
+*/
+
+// =============================
+//* Q3: What is the difference between ~/ and / in Dart?
+// =============================
+/*
+/  -> Division operator, returns double result
+~/ -> Integer division operator, returns int result
+*/
+
+// Example:
+print(10 / 3);  // 3.333...
+print(10 ~/ 3); // 3
+
+// =============================
+//* Q4: What are null-aware operators?
+// =============================
+/*
+??   -> Provides default value if null
+??=  -> Assigns value only if variable is null
+*/
+
+// Example:
+String? name;
+print(name ?? "Guest"); // Guest
+name ??= "Webiyor";
+print(name);            // Webiyor
+
+// =============================
+//* Q5: Difference between pre-increment and post-increment
+// =============================
+/*
+++a -> Pre-increment: increases value first, then uses it
+a++ -> Post-increment: uses current value first, then increases
+*/
+
+// =============================
+//* Q6: Explain logical operators in Dart
+// =============================
+/*
+&& -> AND (both must be true)
+|| -> OR  (any one true)
+!  -> NOT (reverses condition)
+*/
+
+// Example:
+bool isLoggedIn = true;
+bool isAdmin = false;
+print(isLoggedIn && isAdmin); // false
+print(isLoggedIn || isAdmin); // true
+print(!isLoggedIn);           // false

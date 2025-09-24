@@ -1,0 +1,93 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025 Webiyor. All rights reserved.
+
+This material is for learning purposes only.
+Do not copy, redistribute, or sell without permission.
+=============================
+*/
+
+**DART OPERATORS**
+
+// =============================
+//* 1️⃣ What is an Operator?
+// =============================
+// Operators are symbols that perform operations on variables and values.
+// Example:
+int a = 10, b = 5;
+print(a + b); // 15
+
+// =============================
+//* 2️⃣ Types of Operators in Dart
+// =============================
+
+// -----------------------------
+// Arithmetic Operators
+// -----------------------------
+int x = 10, y = 3;
+print(x + y); // 13 (Addition)
+print(x - y); // 7  (Subtraction)
+print(x * y); // 30 (Multiplication)
+print(x / y); // 3.333... (Division -> double result)
+print(x ~/ y); // 3 (Integer Division)
+print(x % y);  // 1 (Remainder)
+
+// -----------------------------
+// Relational (Comparison) Operators
+// -----------------------------
+print(x > y);   // true
+print(x < y);   // false
+print(x >= y);  // true
+print(x <= y);  // false
+print(x == y);  // false
+print(x != y);  // true
+
+// -----------------------------
+// Logical Operators
+// -----------------------------
+bool isLoggedIn = true;
+bool isAdmin = false;
+
+print(isLoggedIn && isAdmin); // false (AND)
+print(isLoggedIn || isAdmin); // true  (OR)
+print(!isLoggedIn);           // false (NOT)
+
+// -----------------------------
+// Assignment Operators
+// -----------------------------
+int z = 5;
+z += 2;  // z = z + 2 -> 7
+z -= 1;  // z = z - 1 -> 6
+z *= 3;  // z = z * 3 -> 18
+z ~/= 2; // z = z ~/ 2 -> 9
+z %= 4;  // z = z % 4 -> 1
+
+// -----------------------------
+// Unary Operators
+// -----------------------------
+int p = 5;
+print(++p); // Pre-increment -> 6
+print(p++); // Post-increment -> prints 6, then p=7
+print(--p); // Pre-decrement -> 6
+print(p--); // Post-decrement -> prints 6, then p=5
+
+// -----------------------------
+// Type Test Operators
+// -----------------------------
+var name = "Webiyor";
+print(name is String); // true
+print(name is int);    // false
+print(name is! bool);  // true
+
+// -----------------------------
+// Null-aware Operators
+// -----------------------------
+String? user;
+print(user ?? "Guest");  // "Guest" if user is null
+user = "Aditya";
+print(user ?? "Guest");  // "Aditya"
+
+int? age;
+age ??= 18;  // Assign only if null
+print(age);  // 18

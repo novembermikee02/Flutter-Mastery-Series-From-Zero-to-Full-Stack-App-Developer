@@ -1,0 +1,21 @@
+/*
+=============================
+DART OPERATORS
+ASSIGNMENTS
+=============================
+*/
+
+// Assignment 1:
+// Take two numbers and perform all arithmetic operations
+
+// Assignment 2:
+// Check if a number is greater than 100 using relational operator
+
+// Assignment 3:
+// Use logical operators to check if user isLoggedIn AND isAdmin
+
+// Assignment 4:
+// Demonstrate difference between pre-increment and post-increment
+
+// Assignment 5:
+// Use null-aware operator ?? to provide default value for null variable

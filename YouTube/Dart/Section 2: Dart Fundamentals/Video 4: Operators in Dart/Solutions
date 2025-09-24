@@ -1,0 +1,55 @@
+/*
+=============================
+DART OPERATORS
+ASSIGNMENTS WITH SOLUTIONS
+=============================
+*/
+
+// =============================
+//* Assignment 1
+// =============================
+// Question: Take two numbers and perform all arithmetic operations
+int a = 12, b = 5;
+print("Addition: ${a + b}");
+print("Subtraction: ${a - b}");
+print("Multiplication: ${a * b}");
+print("Division: ${a / b}");
+print("Integer Division: ${a ~/ b}");
+print("Remainder: ${a % b}");
+
+// =============================
+//* Assignment 2
+// =============================
+// Question: Check if a number is greater than 100 using relational operator
+int num = 150;
+print(num > 100 ? "Greater than 100" : "Not greater than 100");
+
+// =============================
+//* Assignment 3
+// =============================
+// Question: Use logical operators to check if user isLoggedIn AND isAdmin
+bool isLoggedIn = true;
+bool isAdmin = false;
+
+if (isLoggedIn && isAdmin) {
+  print("Welcome Admin!");
+} else {
+  print("Access Denied!");
+}
+
+// =============================
+//* Assignment 4
+// =============================
+// Question: Demonstrate difference between pre-increment and post-increment
+int x = 5;
+print(++x); // Pre-increment: increases first, prints 6
+print(x++); // Post-increment: prints 6, then increases to 7
+
+// =============================
+//* Assignment 5
+// =============================
+// Question: Use null-aware operator ?? to provide default value for null variable
+String? user;
+print(user ?? "Guest"); // "Guest"
+user = "Aditya";
+print(user ?? "Guest"); // "Aditya"
