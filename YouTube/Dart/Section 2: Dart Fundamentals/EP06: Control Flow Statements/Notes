@@ -1,0 +1,120 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025 Webiyor. All rights reserved.
+=============================
+*/
+
+**CONTROL FLOW – INTRO & IF**
+
+// =============================
+//* 1️⃣ What is Control Flow?
+// =============================
+// Control Flow decides which part of code will run.
+// It helps programs make decisions based on conditions.
+
+Example:
+if (condition) {
+  // code runs only if condition is true
+}
+
+// =============================
+//* 2️⃣ IF Statement
+// =============================
+int age = 18;
+
+if (age >= 18) {
+  print("You are eligible to vote.");
+}
+
+int age = 20;
+
+if (age >= 18) {
+  print("You are eligible to vote.");
+}
+
+Explanation:
+👉 The if statement checks the condition (age >= 18) — if true, it runs the code inside {}.
+
+Example 2: if with a false condition
+
+int marks = 30;
+
+if (marks > 40) {
+  print("You passed!");
+}
+
+print("Exam finished!");
+
+Output:
+Exam finished!
+Because marks > 40 is false, the code inside if doesn’t run.
+
+// Output: You are eligible to vote.
+
+**IF-ELSE STATEMENT**
+
+Definition:
+When you want to do one thing if a condition is true, and something else if false.
+
+if (condition) {
+  // runs if true
+} else {
+  // runs if false
+}
+
+int age = 16;
+
+if (age >= 18) {
+  print("You can vote.");
+} else {
+  print("You are too young to vote.");
+}
+
+
+int marks = 80;
+
+if (marks >= 50) {
+  print("Passed");
+} else {
+  print("Failed");
+}
+
+
+Example:
+int marks = 40;
+if (marks >= 35) {
+  print("Pass");
+} else {
+  print("Fail");
+}
+
+
+**IF-ELSE-IF LADDER**
+
+Used when multiple conditions exist.
+
+Used when you have multiple conditions to check — one by one.
+
+Example:
+int marks = 85;
+if (marks >= 90) {
+  print("Grade A+");
+} else if (marks >= 75) {
+  print("Grade A");
+} else if (marks >= 60) {
+  print("Grade B");
+} else {
+  print("Fail");
+}
+
+int temperature = 25;
+
+if (temperature > 35) {
+  print("It's hot!");
+} else if (temperature > 20) {
+  print("It's pleasant!");
+} else {
+  print("It's cold!");
+}
+

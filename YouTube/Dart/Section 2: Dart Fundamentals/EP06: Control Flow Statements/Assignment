@@ -1,0 +1,13 @@
+// Assignment 1: Write an if condition to check if a number is positive
+// Assignment 2: Check if a person is eligible for driving license (age >= 18)
+
+//If-Else Statements in Dart
+
+// Assignment 1: Check if temperature > 30 → "Hot Day", else "Cool Day"
+// Assignment 2: Check if a number is even or odd
+
+
+//If-Else-If Chains in Dart
+
+// Assignment 1: Display grade using marks
+// Assignment 2: Check temperature range and print message

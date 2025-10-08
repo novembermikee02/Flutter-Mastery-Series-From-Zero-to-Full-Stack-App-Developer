@@ -1,0 +1,40 @@
+int number = 10;
+if (number > 0) {
+  print("Positive number");
+}
+
+int age = 16;
+if (age >= 18) {
+  print("Eligible for License");
+}
+
+
+//If-Else Statements in Dart
+
+int temp = 35;
+if (temp > 30) {
+  print("Hot Day");
+} else {
+  print("Cool Day");
+}
+
+int num = 7;
+if (num % 2 == 0) {
+  print("Even");
+} else {
+  print("Odd");
+}
+
+
+//If-Else-If Chains in Dart
+
+int marks = 67;
+if (marks >= 90) {
+  print("A+");
+} else if (marks >= 75) {
+  print("A");
+} else if (marks >= 60) {
+  print("B");
+} else {
+  print("Fail");
+}

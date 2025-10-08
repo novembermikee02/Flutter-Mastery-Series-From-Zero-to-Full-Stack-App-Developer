@@ -1,0 +1,24 @@
+🗂 Interview Prep
+
+Q1: What is control flow in Dart?
+
+Q2: How does the if statement work?
+
+Q3: Can we use multiple ifs in one program?
+
+
+//If-Else Statements in Dart
+
+Q1: Difference between if and if-else
+
+Q2: What happens if both conditions are false?
+
+Q3: Can we use else without if? → ❌ No
+
+// /If-Else-If Chains in Dart
+
+Q1: What is if-else-if ladder?
+
+Q2: When to use if-else-if instead of nested if?
+
+Q3: What happens when two conditions are true? (Only first true block executes)
