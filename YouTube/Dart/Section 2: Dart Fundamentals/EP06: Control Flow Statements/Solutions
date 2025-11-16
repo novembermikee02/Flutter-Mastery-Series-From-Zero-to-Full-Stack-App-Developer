@@ -38,3 +38,61 @@ if (marks >= 90) {
 } else {
   print("Fail");
 }
+
+
+// 🔵 EP06.4 – Switch Case Basics in Dart
+
+int day = 7;
+switch (day) {
+  case 1:
+    print("Monday");
+    break;
+  case 7:
+    print("Sunday");
+    break;
+  default:
+    print("Invalid day");
+}
+
+// 🟣 EP06.5 – Switch Case with Strings in Dart
+
+String role = "editor";
+switch (role) {
+  case "admin":
+    print("Access: Full");
+    break;
+  case "editor":
+    print("Access: Limited");
+    break;
+  case "viewer":
+    print("Access: Read Only");
+    break;
+  default:
+    print("Invalid Role");
+}
+
+// 🔴 EP06.6 – Switch Case with Enums in Dart
+
+enum Day { Monday, Saturday, Sunday }
+
+Day today = Day.Sunday;
+
+switch (today) {
+  case Day.Monday:
+    print("Work Day");
+    break;
+  case Day.Saturday:
+  case Day.Sunday:
+    print("Weekend");
+    break;
+}
+
+// 🟤 EP06.7 – Ternary Operator in Dart
+
+int marks = 80;
+print((marks >= 35) ? "Pass" : "Fail");
+
+int num = 9;
+print((num % 2 == 0) ? "Even" : "Odd");
+
+

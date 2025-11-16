@@ -11,3 +11,25 @@
 
 // Assignment 1: Display grade using marks
 // Assignment 2: Check temperature range and print message
+
+
+// 🔵 EP06.4 – Switch Case Basics in Dart
+
+// Assignment 1: Print day of week using switch
+// Assignment 2: Print month name using switch
+
+
+// 🟣 EP06.5 – Switch Case with Strings in Dart
+
+// Assignment 1: Check user role: admin, editor, viewer
+
+
+// 🔴 EP06.6 – Switch Case with Enums in Dart
+
+// Assignment: Create enum for days and print workday/weekend
+
+
+// 🟤 EP06.7 – Ternary Operator in Dart
+
+// Assignment 1: Check pass/fail using ternary
+// Assignment 2: Print even/odd using ternary

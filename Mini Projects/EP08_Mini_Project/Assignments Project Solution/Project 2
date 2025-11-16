@@ -1,0 +1,80 @@
+/*
+===========================================
+Assignment 2️⃣: Smart ATM Machine
+Concepts Used:
+- Switch Case
+- Enum
+- If / Else
+===========================================
+*/
+
+import 'dart:io';
+
+// Enum representing account types
+enum AccountType { savings, current }
+
+// Input function
+String input(String msg) {
+  stdout.write(msg);
+  return stdin.readLineSync() ?? "";
+}
+
+void main() {
+  print("\n=========== SMART ATM MACHINE ===========\n");
+
+  // -----------------------------------------
+  // STEP 1: Choose Account Type (ENUM)
+  // -----------------------------------------
+  print("Select Account Type:");
+  print("1. Savings");
+  print("2. Current");
+
+  String acc = input("Enter option (1-2): ");
+  AccountType account =
+      acc == "1" ? AccountType.savings : AccountType.current;
+
+  // Initial balance
+  double balance = 5000;
+
+  // -----------------------------------------
+  // STEP 2: ATM Menu
+  // -----------------------------------------
+  print("\nATM Options:");
+  print("1. Withdraw");
+  print("2. Deposit");
+  print("3. Check Balance");
+
+  String choice = input("Choose option (1-3): ");
+
+  switch (choice) {
+    case "1":
+      // Withdraw
+      double amount = double.parse(input("Enter withdraw amount: "));
+
+      if (amount > balance) {
+        print("❌ Insufficient Balance!");
+      } else {
+        balance -= amount;
+        print("✅ Withdraw Successful!");
+      }
+      break;
+
+    case "2":
+      // Deposit
+      double amount = double.parse(input("Enter deposit amount: "));
+      balance += amount;
+      print("✅ Deposit Successful!");
+      break;
+
+    case "3":
+      // Check balance
+      print("Your Current Balance is: ₹$balance");
+      break;
+
+    default:
+      print("❌ Invalid Choice");
+  }
+
+  print("\nAccount Type : $account");
+  print("Final Balance: ₹$balance");
+}

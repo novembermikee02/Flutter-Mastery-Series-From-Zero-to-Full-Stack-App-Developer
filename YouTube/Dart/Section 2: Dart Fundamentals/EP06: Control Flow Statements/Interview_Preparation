@@ -22,3 +22,33 @@ Q1: What is if-else-if ladder?
 Q2: When to use if-else-if instead of nested if?
 
 Q3: What happens when two conditions are true? (Only first true block executes)
+
+// 🔵 EP06.4 – Switch Case Basics in Dart
+
+Q1: What is a switch case?
+
+Q2: Why do we use break?
+
+Q3: What is the use of default?
+
+// 🟣 EP06.5 – Switch Case with Strings in Dart
+
+Q1: Can switch use string values in Dart? → ✅ Yes
+
+Q2: Can switch handle null values? → ❌ No
+
+// 🔴 EP06.6 – Switch Case with Enums in Dart
+
+Q1: What is an enum?
+
+Q2: Why use enums with switch?
+
+Q3: Can enum values be changed at runtime? → ❌ No
+
+// 🟤 EP06.7 – Ternary Operator in Dart
+
+Q1: What is ternary operator in Dart?
+
+Q2: Can we nest ternary operators? → ✅ Yes (but not recommended)
+
+Q3: Difference between ternary and if-else.

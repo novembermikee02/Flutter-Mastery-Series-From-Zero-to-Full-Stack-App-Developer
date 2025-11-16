@@ -118,3 +118,137 @@ if (temperature > 35) {
   print("It's cold!");
 }
 
+
+
+// 🔵 EP06.4 – Switch Case Basics in Dart
+
+**SWITCH CASE**
+
+Used when you have multiple fixed options to check.
+
+Example:
+int day = 3;
+
+switch (day) {
+  case 1:
+    print("Monday");
+    break;
+  case 2:
+    print("Tuesday");
+    break;
+  case 3:
+    print("Wednesday");
+    break;
+  default:
+    print("Invalid day");
+}
+
+
+// 🟣 EP06.5 – Switch Case with Strings in Dart
+
+**SWITCH WITH STRINGS**
+
+Dart supports string values in switch.
+
+Example:
+String role = "admin";
+
+switch (role) {
+  case "admin":
+    print("Welcome, Admin!");
+    break;
+  case "user":
+    print("Welcome, User!");
+    break;
+  default:
+    print("Unknown role");
+}
+
+// 🔴 EP06.6 – Switch Case with Enums in Dart
+
+**SWITCH WITH ENUMS**
+
+Enums represent fixed constant values.
+
+enum Role { admin, user, guest }
+
+void main() {
+  Role role = Role.admin;
+
+  switch (role) {
+    case Role.admin:
+      print("Admin Access");
+      break;
+    case Role.user:
+      print("User Access");
+      break;
+    case Role.guest:
+      print("Guest Access");
+      break;
+  }
+}
+
+// 🟤 EP06.7 – Ternary Operator in Dart
+
+**TERNARY OPERATOR**
+
+Shortcut for simple if-else.
+
+Syntax:
+(condition) ? valueIfTrue : valueIfFalse;
+
+Example:
+int age = 20;
+String result = (age >= 18) ? "Adult" : "Minor";
+print(result); // Adult
+
+
+// ⚫ EP06.8 – Control Flow Project in Dart
+
+**CONTROL FLOW MINI PROJECT**
+
+Goal: Use all concepts learned (if, else-if, switch, ternary)
+
+Example: Grade Calculator
+
+int marks = 85;
+
+if (marks >= 90) {
+  print("A+");
+} else if (marks >= 75) {
+  print("A");
+} else if (marks >= 60) {
+  print("B");
+} else {
+  print("Fail");
+}
+
+// Also using ternary
+String result = (marks >= 35) ? "Pass" : "Fail";
+print("Result: $result");
+
+
+// Build "Simple ATM Menu" using switch and if-else
+// Options: Check Balance, Deposit, Withdraw, Exit
+
+
+int balance = 1000;
+String choice = "deposit";
+
+switch (choice) {
+  case "check":
+    print("Balance: $balance");
+    break;
+  case "deposit":
+    balance += 500;
+    print("Deposited! New balance: $balance");
+    break;
+  case "withdraw":
+    balance -= 200;
+    print("Withdrawn! New balance: $balance");
+    break;
+  default:
+    print("Invalid Option");
+}
+
+

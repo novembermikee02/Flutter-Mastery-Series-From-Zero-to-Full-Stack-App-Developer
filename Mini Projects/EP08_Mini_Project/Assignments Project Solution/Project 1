@@ -1,0 +1,78 @@
+/*
+===========================================
+Assignment 1️⃣: Student Result & Grade Generator
+Concepts Used:
+- If / Else
+- Nested If
+- Ternary Operator
+===========================================
+*/
+
+import 'dart:io';
+
+// Helper function to take input
+String input(String msg) {
+  stdout.write(msg);
+  return stdin.readLineSync() ?? "";
+}
+
+void main() {
+  print("\n===== STUDENT RESULT & GRADE GENERATOR =====\n");
+
+  // -----------------------------------------
+  // STEP 1: Take marks for 3 subjects
+  // -----------------------------------------
+  int sub1 = int.parse(input("Enter marks for Subject 1: "));
+  int sub2 = int.parse(input("Enter marks for Subject 2: "));
+  int sub3 = int.parse(input("Enter marks for Subject 3: "));
+
+  // -----------------------------------------
+  // STEP 2: Check if student failed in any subject
+  // -----------------------------------------
+  // If any subject < 35 → FAIL  
+  bool failed = (sub1 < 35 || sub2 < 35 || sub3 < 35);
+
+  // -----------------------------------------
+  // STEP 3: Calculate percentage
+  // -----------------------------------------
+  int total = sub1 + sub2 + sub3;
+  double percent = total / 3;
+
+  // -----------------------------------------
+  // STEP 4: Decide Grade using Nested IF
+  // -----------------------------------------
+  String grade = "";
+
+  if (!failed) {
+    if (percent >= 90) {
+      grade = "A+";
+    } else if (percent >= 75) {
+      grade = "A";
+    } else if (percent >= 60) {
+      grade = "B";
+    } else if (percent >= 45) {
+      grade = "C";
+    } else {
+      grade = "D";
+    }
+  }
+
+  // -----------------------------------------
+  // STEP 5: Final Result (Ternary)
+  // -----------------------------------------
+  String result = failed ? "FAIL" : "PASS";
+
+  // -----------------------------------------
+  // STEP 6: Print Report Card
+  // -----------------------------------------
+  print("\n=========== RESULT ===========");
+  print("Subject 1: $sub1");
+  print("Subject 2: $sub2");
+  print("Subject 3: $sub3");
+  print("--------------------------------");
+  print("Total Marks : $total");
+  print("Percentage  : ${percent.toStringAsFixed(2)}%");
+  print("Result      : $result");
+  print("Grade       : ${failed ? "--" : grade}");
+  print("================================\n");
+}

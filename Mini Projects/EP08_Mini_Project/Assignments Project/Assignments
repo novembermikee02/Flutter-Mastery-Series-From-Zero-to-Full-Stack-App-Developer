@@ -1,0 +1,68 @@
+// Assignment 1️⃣: Student Result & Grade Generator
+Must Use:
+
+If/Else
+
+Nested if
+
+Ternary operator
+
+Requirements:
+
+Take marks in 3 subjects
+
+Calculate percentage
+
+Grade based on percentage
+
+If marks < 35 in any subject → FAIL
+
+Use ternary:
+"Pass" : "Fail" based on overall result
+
+
+// Assignment 2️⃣: Smart ATM Machine
+Must Use:
+
+Switch case
+
+If/Else
+
+Enum
+
+Requirements:
+
+ATM options:
+
+Withdraw
+
+Deposit
+
+Check Balance
+
+If amount > balance → show error
+
+Enum for account type (savings, current)
+
+
+
+// Assignment 3️⃣: Movie Ticket Booking System
+Must Use:
+
+Switch case
+
+Nested if
+
+Ternary
+
+Enum
+
+Requirements:
+
+Movie category enum: Action, Comedy, Horror
+
+Based on category → different price
+
+If booking on weekend → extra charge
+
+Ternary for “Child ticket discount”
