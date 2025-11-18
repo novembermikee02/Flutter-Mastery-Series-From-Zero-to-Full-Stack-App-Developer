@@ -1,0 +1,15 @@
+Assignment 1:
+Use for-in to print all colors: ["Red", "Blue", "Green"]
+
+Assignment 2:
+Use for-in to print all numbers in list: [5, 10, 15, 20]
+
+Assignment 3:
+Use for-in to print all fruits from a Set
+
+Assignment 4:
+Use for-in to print all student names from a list
+
+Assignment 5:
+Use for-in to print key + value from a Map:
+{"A": 1, "B": 2, "C": 3}

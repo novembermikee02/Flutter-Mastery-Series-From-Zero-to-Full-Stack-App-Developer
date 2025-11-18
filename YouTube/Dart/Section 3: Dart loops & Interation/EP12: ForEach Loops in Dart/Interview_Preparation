@@ -1,0 +1,25 @@
+Q1: What is a forEach loop?
+
+A function-based loop used to run code for every element in a collection.
+
+Q2: Can we use break or continue in forEach?
+
+No, forEach cannot be stopped.
+
+Q3: Difference between for-in and forEach?
+for-in	forEach
+simple loop	callback based
+supports break	cannot break
+no index	no index
+works on list/set/map	works on list/set/map
+Q4: Can we use forEach on maps?
+
+Yes. map.forEach((key, value){})
+
+Q5: Which one is cleaner for reading values?
+
+forEach → shortest and cleanest.
+
+Q6: When not to use forEach?
+
+When you need index or break/continue.

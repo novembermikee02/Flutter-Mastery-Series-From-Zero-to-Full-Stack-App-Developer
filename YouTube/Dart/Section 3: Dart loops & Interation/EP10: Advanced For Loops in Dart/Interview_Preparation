@@ -1,0 +1,23 @@
+Q1: What is a nested for loop?
+
+A loop inside another loop.
+
+Q2: What is the purpose of break inside a loop?
+
+To stop the loop immediately.
+
+Q3: What does continue do?
+
+Skips the current loop step and moves to next iteration.
+
+Q4: How to create a reverse for loop?
+
+Use i-- and decreasing condition.
+
+Q5: What happens if you don’t write a condition in for loop?
+
+It becomes an infinite loop until you stop it with break.
+
+Q6: Can you write a for loop without initialization or update?
+
+Yes, Dart allows that.

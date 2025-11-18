@@ -1,0 +1,19 @@
+Assignment 1:
+Use forEach to print numbers: [1, 2, 3, 4, 5]
+
+Assignment 2:
+Use forEach to print all city names from list:
+["Delhi", "Mumbai", "Chennai"]
+
+Assignment 3:
+Use forEach to print squares (n*n) for list:
+[2, 4, 6]
+
+Assignment 4:
+Use forEach on set:
+{"Red", "Green", "Blue"}
+
+Assignment 5:
+Use forEach on Map:
+{"A": 10, "B": 20, "C": 30}
+Print key and value.

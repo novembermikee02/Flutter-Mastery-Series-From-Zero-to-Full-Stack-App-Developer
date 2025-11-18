@@ -1,0 +1,117 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025.
+This material is for learning only.
+=============================
+*/
+
+=============================
+📌 EP03 – FOR-IN LOOPS IN DART
+=============================
+
+🔷 1️⃣ What is a For-In Loop?
+
+A for-in loop is used to read all elements in a list/set one by one, without using an index.
+
+👉 Best when you want to only read values
+👉 No need to write i < list.length
+👉 No need to write i++
+
+🔷 2️⃣ Basic Syntax
+
+for (var item in collection) {
+  // use item
+}
+
+✔ item → each value
+✔ collection → list/set/map keys
+
+🔷 3️⃣ Example 1: Simple List Loop
+
+List<String> names = ["Ram", "Shyam", "Mohan"];
+
+for (var name in names) {          // For-In reads each value
+  print(name);                     // Print each name
+}
+
+📌 Output:
+Ram
+Shyam
+Mohan
+
+💡 Why use?
+
+Cleaner and shorter than normal for loop when you don’t need index.
+
+🔷 4️⃣ Example 2: Numbers List
+
+List<int> numbers = [10, 20, 30];
+
+for (var n in numbers) {
+  print("Value is: $n");          // Use each number
+}
+
+📌 Output:
+Value is: 10
+Value is: 20
+Value is: 30
+
+🔷 5️⃣ Real-Life Example 1: Show all items in a shopping cart
+
+List<String> cart = ["Shoes", "Watch", "Cap"];
+
+for (var item in cart) {
+  print("Cart item: $item");
+}
+
+🔷 6️⃣ Real-Life Example 2: Send email to all users
+
+List<String> emails = ["a@gmail.com", "b@gmail.com", "c@gmail.com"];
+
+for (var email in emails) {
+  print("Sending email to: $email");
+}
+
+
+🔷 7️⃣ For-In with Set (No duplicate values)
+
+Set<String> fruits = {"Apple", "Mango", "Banana"};
+
+for (var fruit in fruits) {
+  print(fruit);
+}
+
+
+🔷 8️⃣ For-In with Map Keys
+
+Map<String, int> scores = {
+  "Math": 90,
+  "Science": 85,
+  "English": 88
+};
+
+for (var subject in scores.keys) {
+  print("Subject: $subject");
+}
+
+
+🔷 9️⃣ For-In with Map Values
+
+for (var score in scores.values) {
+  print("Score: $score");
+}
+
+🔷 🔟 For-In with Map (Key + Value)
+
+for (var entry in scores.entries) {
+  print("${entry.key}: ${entry.value}");
+}
+
+
+🟩 1️⃣1️⃣ When should we use For-In Loop?
+
+✔ When you don’t need the index
+✔ When reading list, set, or map
+✔ When code should look cleaner
+✔ When order is important (list)

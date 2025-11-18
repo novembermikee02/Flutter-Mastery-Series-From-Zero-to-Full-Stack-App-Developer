@@ -1,0 +1,109 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025.
+This material is for learning only.
+=============================
+*/
+
+=============================
+📌 EP04 – FOREACH LOOP IN DART
+=============================
+
+🔷 1️⃣ What is a forEach Loop?
+
+A forEach loop is a function-based loop used to run code for every item in a list, set, or map.
+
+✔ Shorter than normal for-loops
+✔ Uses a callback function
+✔ Very clean and readable
+
+🔷 2️⃣ Basic Syntax
+
+list.forEach((item) {
+  // use item
+});
+
+item → each value
+
+Code inside { } runs for every element
+
+🔷 3️⃣ Example 1 – Simple List
+
+List<String> names = ["Ram", "Shyam", "Mohan"];
+
+// forEach loop
+names.forEach((name) {
+  print(name);  // Print each item
+});
+
+📌 Output:
+Ram  
+Shyam  
+Mohan
+
+🔷 4️⃣ Example 2 – Numbers
+
+List<int> nums = [10, 20, 30];
+
+nums.forEach((n) {
+  print("Number: $n");   // Reading each value
+});
+
+🔷 6️⃣ Real-Life Example 2: Display Product Names
+
+List<String> products = ["Mobile", "Laptop", "Watch"];
+
+products.forEach((item) {
+  print("Product: $item");
+});
+
+
+🔷 7️⃣ forEach with Set
+
+Set<String> fruits = {"Apple", "Mango", "Banana"};
+
+fruits.forEach((fruit) {
+  print(fruit);
+});
+
+
+🔷 8️⃣ forEach with Map (Keys + Values)
+
+✔ Loop only keys
+
+Map<String, int> scores = {"Math": 95, "Science": 85};
+
+scores.keys.forEach((key) {
+  print("Subject: $key");
+});
+
+✔ Loop only values
+
+scores.values.forEach((value) {
+  print("Marks: $value");
+});
+
+✔ Loop entries (key + value)
+
+scores.forEach((key, value) {
+  print("$key = $value");
+});
+
+
+🔷 9️⃣ Important Notes
+✔ forEach Cannot Be Stopped
+
+You cannot use break or continue inside forEach.
+Use normal for loop if you want to stop loop.
+
+✔ Best for reading values
+
+Not ideal when you need index number.
+
+🟩 🔟 When should you use forEach?
+
+✔ When you want clean readable code
+✔ When you don't need index
+✔ When you want functional programming style
+✔ Best for lists, sets, maps

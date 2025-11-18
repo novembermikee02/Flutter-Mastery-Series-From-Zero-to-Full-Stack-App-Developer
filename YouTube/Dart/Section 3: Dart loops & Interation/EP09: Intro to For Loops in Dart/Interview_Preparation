@@ -1,0 +1,23 @@
+// Q1: What is a for loop?
+
+// A for loop repeats code a fixed number of times.
+
+// Q2: When should you use a for loop?
+
+// Use it when the number of iterations is known.
+
+// Q3: What are the 3 parts of a for loop?
+
+// Initialization, condition, update.
+
+// Q4: Can we loop backward using for loop?
+
+// Yes, by using i--.
+
+// Q5: Can we skip numbers inside a for loop?
+
+// Yes, by changing increment like i += 2.
+
+// Q6: What happens if condition is always true?
+
+// The loop becomes infinite.

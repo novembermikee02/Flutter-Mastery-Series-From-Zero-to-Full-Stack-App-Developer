@@ -1,0 +1,66 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025 Webiyor.
+This material is for learning only.
+=============================
+*/
+
+=============================
+📌 EP01 – INTRO TO FOR LOOPS IN DART
+=============================
+
+🔷 1️⃣ What is a For Loop?
+
+A for loop is used when you want to repeat some code a fixed number of times.
+
+🔹 What is a For Loop?
+
+A for loop repeats a block of code a fixed number of times. 
+Useful when you know how many times you want to repeat.
+
+
+It has 3 parts:
+
+for (initialization; condition; update) {
+  // code to repeat
+}
+
+✔ Initialization → Runs only once (starting point)
+✔ Condition → Loop runs while this is true
+✔ Update → Changes the counter in every loop
+
+🔷 2️⃣ Basic Syntax
+
+for (int i = 0; i < 5; i++) {
+  print(i);
+}
+
+Output:
+0
+1
+2
+3
+4
+
+🔷 3️⃣ Example 1 (Simple Counter)
+
+for (int i = 1; i <= 5; i++) {
+  print("Number: $i");
+}
+
+Explanation: Prints numbers 1 to 5.
+
+🔷 4️⃣ Example 2 (Print Even Numbers)
+
+for (int i = 2; i <= 10; i += 2) {
+  print("Even: $i");
+}
+
+Explanation: Loop jumps by +2, so it prints even numbers.
+
+🟩 7️⃣ Why Use For Loop?
+
+✔ When number of iterations is known
+✔ Easy, predictable, and fast
+✔ Best for indexing lists

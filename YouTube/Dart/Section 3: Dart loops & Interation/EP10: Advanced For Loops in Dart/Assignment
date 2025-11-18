@@ -1,0 +1,14 @@
+Assignment 1:
+Use nested for loops to print a 3x3 grid of numbers.
+
+Assignment 2:
+Print numbers from 1 to 10 but stop when the number becomes 6 (use break).
+
+Assignment 3:
+Print numbers from 1 to 10 but skip number 4 (use continue).
+
+Assignment 4:
+Print numbers from 10 to 1 using a reverse for loop.
+
+Assignment 5:
+Search for a name "Aditya" in a list using for loop + break.

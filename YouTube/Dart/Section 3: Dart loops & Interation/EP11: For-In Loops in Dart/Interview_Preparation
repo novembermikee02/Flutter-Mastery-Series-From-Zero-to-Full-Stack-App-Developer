@@ -1,0 +1,33 @@
+Q1: What is a for-in loop?
+
+A simple loop used to read each value of a list, set, or map.
+
+Q2: Can we get index using for-in?
+
+No. For index, use normal for loop.
+
+Q3: Is for-in loop faster?
+
+Yes, it is simple and lightweight for reading values.
+
+Q4: Can we use for-in with Map?
+
+Yes, using .keys, .values, or .entries.
+
+Q5: Why is for-in loop cleaner?
+
+Because it does not require:
+
+initialization
+
+condition
+
+update
+
+Q6: When should we NOT use for-in?
+
+When you need:
+
+index number
+
+to modify list items with index

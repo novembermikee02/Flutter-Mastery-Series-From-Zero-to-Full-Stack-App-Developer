@@ -1,0 +1,158 @@
+/*
+=============================
+Created by: Webiyor
+Copyright (c) 2025.
+This material is for learning only.
+=============================
+*/
+
+=============================
+📌 EP02 – ADVANCED FOR LOOPS IN DART
+=============================
+
+🔷 1️⃣ What is an Advanced For Loop?
+
+These are special or smart ways of using for loops:
+
+✔ Nested for loops
+✔ Loop with conditions
+✔ Loop with break
+✔ Loop with continue
+✔ Reverse loops
+✔ Looping without initialization or update
+
+These are used for complex logic.
+
+🔷 2️⃣ Nested For Loops (Loop inside loop)
+
+Used when we want to repeat something inside another loop.
+
+✔ Example 1 – Print a square pattern
+
+for (int i = 1; i <= 3; i++) {         // Outer loop controls rows
+  print("Row $i");                     // Shows which row we are in
+
+  for (int j = 1; j <= 3; j++) {       // Inner loop controls columns
+    print("  Column $j");              // Prints column inside each row
+  }
+}
+
+📌 Output:
+Row 1
+  Column 1
+  Column 2
+  Column 3
+Row 2
+  Column 1
+  Column 2
+  Column 3
+Row 3
+  Column 1
+  Column 2
+  Column 3
+
+  💡 Why use?
+
+Useful in:
+
+Grids
+
+Tables
+
+Game boards
+
+UI layout loops
+
+🔷 3️⃣ Using break (Stop the loop immediately)
+
+for (int i = 1; i <= 10; i++) {
+  print("Number: $i");
+
+  if (i == 5) {               // If number becomes 5
+    print("Stopping loop.");  
+    break;                    // Loop ends here
+  }
+}
+
+📌 Output:
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+Stopping loop.
+
+💡 Why use?
+
+Stop searching when item found, stop loops early to improve speed.
+
+
+.
+
+🔷 4️⃣ Using continue (Skip a step)
+
+for (int i = 1; i <= 5; i++) {
+  if (i == 3) {               
+    continue;                 // Skips printing 3
+  }
+
+  print("Value: $i");
+}
+
+📌 Output:
+Value: 1
+Value: 2
+Value: 4
+Value: 5
+
+💡 Why use?
+
+Skip unwanted records, skip null/invalid data, skip blocked users, etc.
+
+
+🔷 5️⃣ Loop Without Initialization
+
+Sometimes the variable is declared outside.
+
+int i = 1;                           // Initialized outside
+
+for (; i <= 5; i++) {                // No initialization inside loop
+  print(i);
+}
+
+📌 Output:
+1
+2
+3
+4
+5
+
+🔷 6️⃣ Loop Without Update (Manual update inside loop)
+
+for (int i = 1; i <= 5;) {      // No update here
+  print(i);
+  i++;                           // Update manually inside loop
+}
+
+✔ Works same, but gives more control.
+
+🔷 7️⃣ Infinite Loop (Until condition is false)
+
+⚠️ Be careful using this.
+
+for (int i = 1; ; i++) {     // No condition → always true
+  print(i);
+  if (i == 5) break;         // Stop manually
+}
+
+
+🔷 8️⃣ Real-Life Example 1 – Searching a product
+
+List<String> products = ["Shoes", "Watch", "Phone", "Bag"];
+
+for (int i = 0; i < products.length; i++) {
+  if (products[i] == "Phone") {
+    print("Phone found at index $i");
+    break;                       // Stop searching
+  }
+}
